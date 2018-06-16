@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/css/main.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">* Name:</label>
+            <input type="text" id="name" placeholder="Enter you name" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">* Email:</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div>
+            <label for="number" id="number-label">* Age:</label>
+            <input type="number" id="number" placeholder="Age" min="1" max="100">
+        </div>
+        <div>
+            <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+            <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+            </select>
+        </div>
+        <div>
+            <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+            <div>
+                <input type="radio" id="definitely" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label>
+            </div>
+            <div>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" id="not-sure" name="recommend" value="not-sure">
+                <label for="not-sure">Not sure</label>
+            </div>
+        </div>
+        <div>
+            <label>Things that should be improved in the future (Check all that apply):</label>
+            <div>
+                <input type="checkbox" id="front-end-projects" name="improve" value="front-end-projects">
+                <label for="front-end-projects">Front-end Projects</label>
+            </div>
+            <div>
+                <input type="checkbox" id="back-end-projects" name="improve" value="back-end-projects">
+                <label for="back-end-projects">Back-end Projects</label>
+            </div>
+            <div>
+                <input type="checkbox" id="challenges" name="improve" value="challenges">
+                <label for="challenges">Challenges</label>
+            </div>
+        </div>
+        <div>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
