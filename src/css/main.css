@@ -1,0 +1,47 @@
+body  {
+    font-family: sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#form-div {
+    background-color: #81ecec;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#survey-form {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 4px 0;
+}
+
+.labels {
+    width: 48%;
+    padding: 2px 1%;
+    text-align: right;
+}
+
+.inputs {
+    width: 48%;
+    padding: 2px 1%;
+    text-align: left;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+}
